@@ -3,31 +3,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ],
-    "builds": [
-        {
-            "src": "index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/products",
-            "dest": "index.js"
-        },
-        {
-            "src": "/products/(.*)",
-            "dest": "index.js"
-        },
-        {
-            "src": "/",
-            "dest": "build/index.html"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "build/$1"
+            "destination": "build/index.html"
         }
     ]
 }
